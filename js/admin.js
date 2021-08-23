@@ -99,7 +99,6 @@ firebase.auth().onAuthStateChanged((user) => {
         </div>
     </div>
     `;
-        console.log(data.val());
       });
   } else {
     window.location = "login.html";
