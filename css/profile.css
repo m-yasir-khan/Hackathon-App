@@ -1,0 +1,375 @@
+/* @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ecf0f3;
+}
+.buttons button,
+.container,
+.container .img-area,
+.social-icons a {
+  background: #ecf0f3;
+  box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
+}
+.container {
+  position: relative;
+  width: 350px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .img-area {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-area .inner-area {
+  height: calc(100% - 25px);
+  width: calc(100% - 25px);
+  border-radius: 50%;
+}
+.inner-area img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.container .name {
+  font-size: 23px;
+  font-weight: 500;
+  color: #31344b;
+  margin: 10px 0 5px 0;
+}
+.container .about {
+  color: #44476a;
+  font-weight: 400;
+  font-size: 16px;
+}
+.container .social-icons {
+  margin: 15px 0 25px 0;
+}
+.social-icons a {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  display: inline-flex;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.social-icons a i {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+}
+.social-icons a.fb i {
+  color: #4267b2;
+}
+.social-icons a.twitter i {
+  color: #1da1f2;
+}
+.social-icons a.insta i {
+  color: #e1306c;
+}
+.social-icons a.yt i {
+  color: red;
+}
+.container .buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.buttons button {
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: 0;
+  padding: 12px 0;
+  color: #31344b;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 4;
+}
+.buttons button:first-child {
+  margin-right: 10px;
+}
+.buttons button:last-child {
+  margin-left: 10px;
+}
+.container .social-share {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 5px;
+  justify-content: space-between;
+}
+.social-share .row {
+  color: #31344b;
+  font-size: 17px;
+  cursor: pointer;
+  position: relative;
+}
+.social-share .row::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 2px;
+  background: #e0e6eb;
+  margin-left: -25px;
+}
+.row:first-child::before {
+  background: 0 0;
+}
+.social-share .row i.icon-2 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  color: #31344b;
+  transform: translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.row:nth-child(1):hover i.fa-heart,
+.row:nth-child(2):hover i.fa-comment {
+  opacity: 1;
+  pointer-events: auto;
+} */
+
+/* ************ PROFILE  *********************** */
+
+.pro-container {
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  /* height: 100vh; */
+  width: 100%;
+  background: rgb(219, 218, 218);
+}
+.user-name {
+  display: flex;
+  /* margin: 20px 20px; */
+  justify-content: space-between !important;
+  /* width: 200px; */
+  flex-wrap: wrap;
+}
+.user-info {
+  display: flex;
+  padding: 10px;
+}
+.info-user {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.user-name-top {
+  margin: 0px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.icon-user {
+  font-size: small;
+  padding: 6px;
+}
+.icon-email {
+  font-size: small;
+  padding: 6px;
+}
+.email-panel {
+  display: flex;
+}
+.email-value {
+  color: rgb(0, 140, 255);
+  cursor: pointer;
+}
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.item-card {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-evenly;
+}
+.add-items-btn {
+  border: 2px solid black;
+  padding: 6px;
+  border-radius: 4px;
+  margin-right: 10px !important;
+}
+.main-card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.main-card-user {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.item-card {
+  margin: 10px;
+}
+.card {
+  position: relative;
+  background: rgb(129, 128, 128);
+  width: 400px;
+  /* height: 75vh; */
+  border-radius: 6px;
+  padding: 2rem;
+  color: #aaa;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.card__image-container {
+  margin: -2rem -2rem 1rem -2rem;
+}
+.card__line {
+  opacity: 0;
+  animation: LineFadeIn 0.8s 0.8s forwards ease-in;
+}
+.card__image {
+  opacity: 0;
+  animation: ImageFadeIn 0.8s 1.4s forwards;
+}
+.card__title {
+  color: white;
+  margin-top: 0;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+.card__content {
+  margin-top: -1rem;
+  opacity: 0;
+  animation: ContentFadeIn 0.8s 1.6s forwards;
+}
+.card__svg {
+  position: absolute;
+  left: 0;
+  top: 115px;
+}
+/* ***************************** */
+.logout-btn {
+  padding: 4px;
+  border-radius: 4px;
+  border: none;
+  color: rgb(71, 69, 69);
+  cursor: pointer;
+  background-color: transparent;
+  margin-right: 10px;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+/* ********************************** */
+@keyframes LineFadeIn {
+  0% {
+    opacity: 0;
+    d: path(
+      "M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 "
+    );
+    stroke: #fff;
+  }
+  50% {
+    opacity: 1;
+    d: path(
+      "M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300"
+    );
+    stroke: #888bff;
+  }
+  100% {
+    opacity: 1;
+    d: path(
+      "M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400"
+    );
+    stroke: #545581;
+  }
+}
+@keyframes ContentFadeIn {
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes ImageFadeIn {
+  0% {
+    transform: translate(-0.5rem, -0.5rem) scale(1.05);
+    opacity: 0;
+    filter: blur(2px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
